@@ -17,6 +17,9 @@
         "docs.api.vilahack.com"
         "hub.vilahack.com"
         "kanban.vilahack.com"
+
+        # Event
+        "staging.vilahack.com"
       ];
     };
   };

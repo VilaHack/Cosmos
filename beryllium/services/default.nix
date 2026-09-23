@@ -1,0 +1,6 @@
+{
+  imports = [
+    ./horizon
+    ./ssh.nix
+  ];
+}

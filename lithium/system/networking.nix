@@ -3,7 +3,7 @@
     enable = true;
 
     networks = {
-      "hydrogen" = {
+      "lithium" = {
         name = "ens18";
         address = [ "10.1.0.3/16" ];
         gateway = [ "10.1.0.1" ];

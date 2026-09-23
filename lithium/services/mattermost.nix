@@ -13,9 +13,9 @@
     socket = {
       enable = true;
       export = true;
-      # use the env variable `MMCTL_LOCAL_SOCKET_PATH=/run/mattermost/mattermost_local.socket`
+      # use the env variable `MMCTL_LOCAL_SOCKET_PATH=/etc/mattermost/mattermost_local.socket`
       # so mmctl can find the socket
-      path = "/run/mattermost/mattermost_local.socket";
+      path = "/etc/mattermost/mattermost_local.socket";
     };
 
     settings = {

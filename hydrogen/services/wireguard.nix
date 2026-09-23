@@ -23,6 +23,12 @@
           presharedKeyFile = "/etc/wireguard/preshared_key";
           allowedIPs = [ "10.0.0.3/32" ];
         }
+        {
+          name = "joel";
+          publicKey = "Q5xTDJz9ZtXDkxrQT7hQ9uVOIh3B7jC12aagUWtnjTo=";
+          presharedKeyFile = "/etc/wireguard/preshared_key";
+          allowedIPs = [ "10.0.0.4/32" ];
+        }
       ];
     };
   };
