@@ -5,10 +5,11 @@
     hostName = "earth";
 
     firewall.allowedTCPPorts = [
-      80 # Homer
+      80   # Homer
       8002 # Kanboard
+      82   # Mail assets
       8065 # Mattermost
-      81 # Swagger
+      81   # Swagger
     ];
   };
 }
