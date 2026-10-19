@@ -1,3 +1,5 @@
+{ lib, config, ... }:
+
 let
   regularUsers = lib.attrNames (lib.filterAttrs (_: user: user.isNormalUser) config.users.users);
 in
