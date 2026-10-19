@@ -29,6 +29,24 @@
           presharedKeyFile = "/etc/wireguard/preshared_key";
           allowedIPs = [ "10.0.0.4/32" ];
         }
+        {
+          name = "ruben-laptop";
+          publicKey = "XyDX9xbbMGufnvIVKL466alUIP1/4W1kKGuJ7LzSIgs=";
+          presharedKeyFile = "/etc/wireguard/preshared_key";
+          allowedIPs = [ "10.0.0.5/32" ];
+        }
+        {
+          name = "ruben-pc";
+          publicKey = "m2jPZvh8wI5yB71zh7uLJ6n9uTRk8/Eqn2X0KEorM0I=";
+          presharedKeyFile = "/etc/wireguard/preshared_key";
+          allowedIPs = [ "10.0.0.6/32" ];
+        }
+        {
+          name = "yazide-mac";
+          publicKey = "55+4/7WPYvzluFvdf1Pn2Ng8H9ImFSetEvnp/V7Yww=";
+          presharedKeyFile = "/etc/wireguard/preshared_key";
+          allowedIPs = [ "10.0.0.7/32" ];
+        }
       ];
     };
   };

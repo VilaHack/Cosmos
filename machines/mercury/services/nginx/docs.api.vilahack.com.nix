@@ -1,5 +1,5 @@
 {
-  services.nginx.virtualHosts."docs.vilahack.com" = {
+  services.nginx.virtualHosts."docs.api.vilahack.com" = {
     kTLS = true;
     forceSSL = true;
     useACMEHost = "vilahack.com";

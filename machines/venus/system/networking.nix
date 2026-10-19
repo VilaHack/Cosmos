@@ -5,7 +5,7 @@
     hostName = "venus";
 
     firewall.allowedTCPPorts = [
-
+      80
     ];
   };
 }
