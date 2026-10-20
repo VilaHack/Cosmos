@@ -24,7 +24,9 @@
     '';
 
     upstreams."mattermost_backend" = {
-      servers = { "10.1.0.3:8065" = {}; };
+      servers = {
+        "10.1.0.3:8065" = { };
+      };
       extraConfig = "keepalive 32;";
     };
   };

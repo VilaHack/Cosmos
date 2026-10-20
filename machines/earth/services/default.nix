@@ -3,7 +3,7 @@
     ./homer.nix
     ./kanboard.nix
     ./mattermost.nix
-    ./nginx.nix
+    ./nginx
     ./ssh.nix
     ./swagger.nix
   ];

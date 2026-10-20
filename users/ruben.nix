@@ -1,5 +1,3 @@
-
-
 {
   users.users.pol-epsevg = {
     isNormalUser = true;

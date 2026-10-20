@@ -21,14 +21,14 @@
     settings = {
       TeamSettings = {
         EnableCustomBrand = true;
-	TeammateNameDisplay = "nickname_full_name";
-	EnableLastActiveTime = false;
-	EnableUserCreation = false;
+        TeammateNameDisplay = "nickname_full_name";
+        EnableLastActiveTime = false;
+        EnableUserCreation = false;
       };
 
       SupportSettings = {
         ReportAProblemLink = "";
-	ReportAProblemMail = "info@vilahack.com";
+        ReportAProblemMail = "info@vilahack.com";
       };
 
       EmailSettings = {
@@ -38,16 +38,16 @@
       ServiceSettings = {
         EnableLocalMode = true;
         EnableSVGs = true;
-	EnableLatex = true;
-	EnableInlineLatex = true;
+        EnableLatex = true;
+        EnableInlineLatex = true;
       };
 
       PasswordSettings = {
         MinimumLength = 10;
-	Lowercase = true;
-	Uppercase = true;
-	Number = true;
-	Symbol = true;
+        Lowercase = true;
+        Uppercase = true;
+        Number = true;
+        Symbol = true;
       };
     };
   };
