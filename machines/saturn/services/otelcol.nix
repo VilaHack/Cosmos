@@ -24,8 +24,8 @@
       };
 
       exporters = {
-        prometheus.endpoint = "0.0.0.0:9090";
-        loki.endpoint = "http://localhost:3100/loki/api/v1/push";
+        prometheus.endpoint = "0.0.0.0:9000";
+        "otlp_http/loki".endpoint = "http://localhost:3100/otlp";
       };
 
       service.pipelines = {
@@ -38,7 +38,7 @@
         logs = {
           receivers = ["otlp"];
           processors = ["batch" "resource"];
-          exporters = ["loki"];
+          exporters = ["otlp_http/loki"];
         };
       };
     };

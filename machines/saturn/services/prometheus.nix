@@ -22,7 +22,7 @@
       {
         job_name = "opentelemetry";
         static_configs = [{
-          targets = [ "localhost:9090" ];
+          targets = [ "localhost:9000" ];
         }];
       }
     ];
