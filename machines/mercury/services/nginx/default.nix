@@ -4,6 +4,7 @@
 
     ./chat.vilahack.com.nix
     ./docs.api.vilahack.com.nix
+    ./grafana.vilahack.com.nix
     ./hub.vilahack.com.nix
     ./kanban.vilahack.com.nix
     ./staging.vilahack.com.nix
