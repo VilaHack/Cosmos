@@ -6,21 +6,31 @@
     package = pkgs.opentelemetry-collector-contrib;
 
     settings = {
-      receivers.otlp.protocols.grpc.endpoint = "0.0.0.0:4317";
+      receivers = {
+        otlp.protocols.grpc.endpoint = "0.0.0.0:4317";
 
-      processors = {
-        batch = {
-          timeout = "1m";
-          send_batch_size = 1024;
+        mongodb = {
+          collection_interval = "15s";
+
+          tls = {
+            insecure = true;
+            insecure_skip_verify = true;
+          };
+
+          hosts = [
+            {
+              endpoint = "10.1.0.5:27017";
+            }
+          ];
+
+          # username = "TODO";
+          # password = "TODO";
         };
+      };
 
-        resource.attributes = [
-          {
-            key = "service.environment";
-            value = "production";
-            action = "upsert";
-          }
-        ];
+      processors.batch = {
+        timeout = "5s";
+        send_batch_size = 1024;
       };
 
       exporters = {
@@ -30,15 +40,18 @@
 
       service.pipelines = {
         metrics = {
-          receivers = ["otlp"];
-          processors = ["batch" "resource"];
-          exporters = ["prometheus"];
+          receivers = [
+            "otlp"
+            "mongodb"
+          ];
+          processors = [ "batch" ];
+          exporters = [ "prometheus" ];
         };
 
         logs = {
-          receivers = ["otlp"];
-          processors = ["batch" "resource"];
-          exporters = ["otlp_http/loki"];
+          receivers = [ "otlp" ];
+          processors = [ "batch" ];
+          exporters = [ "otlp_http/loki" ];
         };
       };
     };

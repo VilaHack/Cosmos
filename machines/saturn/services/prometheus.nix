@@ -11,7 +11,7 @@
     # };
 
     globalConfig.scrape_interval = "1m";
-    
+
     scrapeConfigs = [
       # {
       #   job_name = "node";
@@ -21,9 +21,11 @@
       # }
       {
         job_name = "opentelemetry";
-        static_configs = [{
-          targets = [ "localhost:9000" ];
-        }];
+        static_configs = [
+          {
+            targets = [ "localhost:9000" ];
+          }
+        ];
       }
     ];
   };
