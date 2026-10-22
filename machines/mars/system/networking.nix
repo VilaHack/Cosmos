@@ -5,7 +5,7 @@
     hostName = "mars";
 
     firewall.allowedTCPPorts = [
-      8001
+      8001 # Staging backend
     ];
   };
 }

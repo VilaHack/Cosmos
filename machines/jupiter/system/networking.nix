@@ -5,7 +5,7 @@
     hostName = "jupiter";
 
     firewall.allowedTCPPorts = [
-      27017
+      27017 # MongoDB
     ];
   };
 }

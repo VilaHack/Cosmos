@@ -7,6 +7,9 @@
   services.mattermost = {
     enable = true;
 
+    # Downloaded from https://github.com/matterpoll/matterpoll/releases/tag/v1.9.2
+    plugins = [ /etc/mattermost/com.github.matterpoll.matterpoll-1.9.2.tar.gz ];
+
     host = "0.0.0.0";
     siteName = "VilaXat";
     siteUrl = "https://chat.vilahack.com";
