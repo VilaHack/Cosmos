@@ -6,5 +6,6 @@
     };
 
     groups.services = { };
+    groups.podman = { };
   };
 }

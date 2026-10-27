@@ -1,6 +1,7 @@
 {
   users.users.pol-epsevg = {
     isNormalUser = true;
+    extraGroups = [ "podman" ];
 
     openssh.authorizedKeys.keys = [
       "sk-ssh-ed25519@openssh.com AAAAGnNrLXNzaC1lZDI1NTE5QG9wZW5zc2guY29tAAAAIMqBbSQdA2V3Qe13TdsgsysB7onommsbUD90nIDAjQegAAAABHNzaDo= pol@token2_framework"
