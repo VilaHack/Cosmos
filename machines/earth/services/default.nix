@@ -4,6 +4,7 @@
     ./kanboard.nix
     ./mattermost.nix
     ./nginx
+    ./spliit.nix
     ./swagger.nix
   ];
 }

@@ -1,16 +1,13 @@
 {
   fetchFromGitHub,
   rustPlatform,
-  postgresql,
   pkgconf,
   openssl,
-  bash,
-  nix,
 }:
 
 let
   package_name = "Horizon";
-  version = "0.1.1";
+  version = "0.1.2";
 in
 rustPlatform.buildRustPackage {
   name = package_name;
@@ -21,10 +18,10 @@ rustPlatform.buildRustPackage {
     owner = "VilaHack";
     repo = package_name;
     tag = version;
-    hash = "sha256-BMfdGylvWvQTGTmTbJbyBcGmqvXtyU12ZoEetRtCeEc=";
+    hash = "sha256-8zu/MA1GtskH27NGl/Qoj0WcLdLHvJPuXRVTxiugxUo=";
   };
 
   nativeBuildInputs = [ pkgconf ];
   buildInputs = [ openssl ];
-  cargoHash = "sha256-hnxhop7dvxtjsLDAZ8n5+PQPo9rozUkmOKoAl8jA7ws=";
+  cargoHash = "sha256-Z1WFgVx6wQwRB0VRCStey5iB2A7dukoSzUNDyTBvAkU=";
 }

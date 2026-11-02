@@ -96,4 +96,8 @@ configured to run periodically, but this will run immediately.
 ## Other tips
 The VPN configuration is located at `machines/mercury/services/wireguard.nix`.
 This is the file you have to edit if you're looking to add or remove clients
-from the VPN.
+from the VPN. It is important to note that you'll have to generate the
+private-public key pair as well as the pre-shared key manually.
+
+The finance webapp is behind nginx basic auth, so you'll have to create the
+passwd file for that.

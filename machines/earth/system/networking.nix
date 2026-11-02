@@ -9,6 +9,7 @@
       8002 # Kanboard
       82 # Mail assets
       8065 # Mattermost
+      83 # Spliit
       81 # Swagger
     ];
   };
