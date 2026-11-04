@@ -16,6 +16,7 @@
         "chat.vilahack.com"
         "docs.api.vilahack.com"
         "finance.vilahack.com"
+        "grafana.vilahack.com"
         "hub.vilahack.com"
         "kanban.vilahack.com"
 

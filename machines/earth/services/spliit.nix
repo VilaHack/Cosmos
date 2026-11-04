@@ -18,7 +18,7 @@
         };
 
         volumes = [ "/var/lib/spliit/database/data:/var/lib/postgresql/data" ];
-	    networks = [ "spliit" ];
+        networks = [ "spliit" ];
       };
 
       spliit = {
@@ -35,11 +35,10 @@
         ports = [ "83:3000/tcp" ];
 
         volumes = [ "/var/lib/spliit/app/cache:/usr/app/.next/cache" ];
-	networks = [ "spliit" ];
+        networks = [ "spliit" ];
       };
     };
   };
-
 
   systemd = {
     tmpfiles.rules = [
