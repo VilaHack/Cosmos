@@ -1,5 +1,5 @@
 {
-  users.users.pol-epsevg = {
+  users.users.ruben = {
     isNormalUser = true;
     extraGroups = [ "podman" ];
 
