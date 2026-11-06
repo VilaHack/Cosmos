@@ -4,6 +4,6 @@
   networking = {
     hostName = "mars";
 
-    firewall.allowedTCPPorts = [  ];
+    firewall.allowedTCPPorts = [ ];
   };
 }
